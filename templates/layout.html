@@ -36,7 +36,10 @@
 </head>
 
 <body id="page-top">
-  {% block body %}{% endblock body %}
+  {% block body %}
+  {% block sidebar %} {% endblock sidebar %}
+  {% endblock body %}
+
 </body>
 
 </html>
