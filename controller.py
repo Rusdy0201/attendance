@@ -16,7 +16,10 @@ value = [
 def index():
     return render_template('index.html', value=value, title='Dashboard')
 
-@app.route('/sidebar')
+@app.route('/admin')
+
+def admin():
+    return render_template('admin.html', title='Admin Area')
 
 def side():
     return render_template('sidebar.html')
